@@ -5,7 +5,7 @@ from tkinter import messagebox
 
 def open_file():
     filepath = filedialog.askopenfilename(title="Please select a file",
-                                          initialdir=r"C:\Users\santi\OneDrive",
+                                          # initialdir=r"#The file path to desired directory(not nesseccarry)",
                                           filetypes=(("c files", "*.c"), ("python files", "*.py"), ("html files", "*.html")))
     file = open(filepath, 'r')
     file_contents = file.read()
